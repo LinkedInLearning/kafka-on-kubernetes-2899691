@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: kafka
+spec:
+  selector:
+    matchLabels:
+      app: kafka
+  serviceName: "kafka"
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kafka
+    spec:
+      containers:
+      - name: kafka
+        image: debezium/kafka
+        ports:
+        - containerPort: 9092
+          name: kafka
+        env:
+        - name: BROKER_ID
+          value: '0'
+        - name: ZOOKEEPER_CONNECT
+          value: 'host.docker.internal:2181'
