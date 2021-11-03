@@ -1,0 +1,8 @@
+See below the commands to calculate the shasum for a file on different operating systems. Replace FILE with the name of the file.
+
+Mac OS: shasum -a 512 FILE
+
+Linux: sha512sum FILE
+
+Windows: certutil -hashfile FILE SHA512
+
