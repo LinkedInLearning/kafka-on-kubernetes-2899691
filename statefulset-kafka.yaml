@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: <name>
+spec:
+  selector:
+    matchLabels:
+      <labels>
+  serviceName: "<name>"
+  replicas: 0
+  template:
+    metadata:
+      labels:
+        <labels>
+    spec:
+      containers:
+      - name: <name>
+        image: <image>
+        ports:
+        - containerPort: 0000
+          name: <name>
+        env:
+        - name: <name>
+          value: <value>

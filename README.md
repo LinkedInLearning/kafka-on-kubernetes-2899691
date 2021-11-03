@@ -22,9 +22,10 @@ To resolve this issue:
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
+	- Java version 8 or higher
+        - [Apache Kafka](https://kafka.apache.org/downloads)
+        - [Docker Desktop](https://www.docker.com/products/docker-desktop) with Kubernetes enabled
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
